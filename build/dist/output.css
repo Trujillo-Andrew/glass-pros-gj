@@ -823,6 +823,10 @@ video {
   max-width: 72rem;
 }
 
+.max-w-screen-md {
+  max-width: 768px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1025,6 +1029,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1086,6 +1095,10 @@ video {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1100,6 +1113,10 @@ video {
 
 .leading-snug {
   line-height: 1.375;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .tracking-tight {
@@ -1173,6 +1190,11 @@ video {
 .text-secondarybrandColor {
   --tw-text-opacity: 1;
   color: rgb(245 96 14 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .underline-offset-2 {
@@ -1273,6 +1295,23 @@ video {
   padding-top: 2rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:-m-4 {
     margin: -1rem;
@@ -1366,6 +1405,16 @@ video {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1384,6 +1433,10 @@ video {
 
   .lg\:mr-12 {
     margin-right: 3rem;
+  }
+
+  .lg\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .lg\:hidden {
@@ -1454,6 +1507,16 @@ video {
     padding-bottom: 5rem;
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:pl-6 {
     padding-left: 1.5rem;
   }
@@ -1487,5 +1550,15 @@ video {
 
   .xl\:pr-20 {
     padding-right: 5rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
