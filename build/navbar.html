@@ -1,0 +1,75 @@
+<header
+  class="text-black md:border-b-2 md:border-primarybrandColor relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 lg:mx-auto lg:flex-row lg:items-center"
+>
+  <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black">
+    <span class="w-52">
+      <img src="img/GlassPro-Logo.png" alt="" />
+    </span>
+  </a>
+  <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
+  <label
+    class="absolute top-5 right-5 cursor-pointer lg:hidden"
+    for="navbar-open"
+  >
+    <span class="sr-only">Toggle Navigation</span>
+    <svg
+      class="h-7 w-7"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
+  </label>
+  <nav
+    aria-label="Header Navigation"
+    class="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row"
+  >
+    <ul
+      class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0"
+    >
+      <li class="lg:mr-12">
+        <a
+          class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="#"
+          >Home</a
+        >
+      </li>
+      <li class="lg:mr-12">
+        <a
+          class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="pages/auto-glass.html"
+          >Auto Glass</a
+        >
+      </li>
+      <li class="lg:mr-12">
+        <a
+          class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="pages/residential-glass.html"
+          >Residential Glass</a
+        >
+      </li>
+      <li class="lg:mr-12">
+        <a
+          class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="pages/commerical-glass.html"
+          >Commercial Glass</a
+        >
+      </li>
+      <li class="lg:mr-12">
+        <a
+          class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="pages/contact-us.html"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+    <hr class="mt-4 w-full lg:hidden" />
+  </nav>
+</header>
