@@ -64,25 +64,29 @@
       <div
         class="flex flex-col justify-center w-full p-8 pt-0 lg:w-1/2 lg:px-12 xl:px-24"
       >
-        <form>
+        <form
+          name="Contact Form"
+          netlify
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+        >
           <div class="-mx-2 md:items-center md:flex">
             <div class="flex-1 px-2">
-              <label class="block mb-2 text-sm text-white "
-                >Full Name</label
-              >
+              <label class="block mb-2 text-sm text-white">Full Name</label>
               <input
                 type="text"
+                name="Customer Name"
                 placeholder="John Doe"
                 class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-sebg-secondarybrandColor focus:ring-secondarybrandColor focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
 
             <div class="flex-1 px-2 mt-4 md:mt-0">
-              <label class="block mb-2 text-sm text-white "
-                >Email address</label
-              >
+              <label class="block mb-2 text-sm text-white">Email address</label>
               <input
                 type="email"
+                name="Customer Email"
                 placeholder="johndoe@example.com"
                 class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-sebg-secondarybrandColor focus:ring-secondarybrandColor focus:outline-none focus:ring focus:ring-opacity-40"
               />
@@ -90,22 +94,20 @@
           </div>
           <div class="-mx-2 md:items-center md:flex">
             <div class="flex-1 px-2">
-              <label class="block mb-2 text-sm text-white "
-                >Phone Number</label
-              >
+              <label class="block mb-2 text-sm text-white">Phone Number</label>
               <input
                 type="phone number"
+                name="Customer Phone Number"
                 placeholder="(970) 858-1234"
                 class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-sebg-secondarybrandColor focus:ring-secondarybrandColor focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
 
             <div class="flex-1 px-2 mt-4 md:mt-0">
-              <label class="block mb-2 text-sm text-white "
-                >Service</label
-              >
+              <label class="block mb-2 text-sm text-white">Service</label>
               <select
                 type="select"
+                name="Service Type"
                 class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-secondarybrandColor focus:ring-secondarybrandColor focus:outline-none focus:ring focus:ring-opacity-40"
               >
                 <option value="Auto Glass">Auto Glass</option>
@@ -119,19 +121,20 @@
           </div>
 
           <div class="w-full mt-4">
-            <label class="block mb-2 text-sm text-white "
-              >Message</label
-            >
+            <label class="block mb-2 text-sm text-white">Message</label>
             <textarea
+              name="Customer Message"
               class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 focus:border-secondarybrandColor focus:ring-secondarybrandColor focus:outline-none focus:ring focus:ring-opacity-40"
               placeholder="Message"
             ></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
 
           <button
+            type="Submit"
             class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-primarybrandColor rounded-md hover:bg-secondarybrandColor focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
           >
-            get in touch
+            Submit
           </button>
         </form>
       </div>
